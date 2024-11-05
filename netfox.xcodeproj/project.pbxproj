@@ -70,6 +70,8 @@
 		B3F8D6821C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */; };
 		B3F8D6831C833B1700F9FBEA /* NFXSettingsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */; };
 		B3F8D6841C833B1700F9FBEA /* NFXStatisticsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */; };
+		D45069362CD9D7E900BA1665 /* NFXLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45069352CD9D7E900BA1665 /* NFXLogger.swift */; };
+		D45069372CD9D7E900BA1665 /* NFXLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45069352CD9D7E900BA1665 /* NFXLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,7 @@
 		B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFXResponseTypeCell_OSX.xib; sourceTree = "<group>"; };
 		B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_OSX.swift; sourceTree = "<group>"; };
 		B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXStatisticsController_OSX.swift; sourceTree = "<group>"; };
+		D45069352CD9D7E900BA1665 /* NFXLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFXLogger.swift; sourceTree = "<group>"; };
 		E20FD2E91C6912D400DCFF61 /* netfox_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -219,6 +222,7 @@
 		B3F8BA701C833ABC00F9FBEA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D45069352CD9D7E900BA1665 /* NFXLogger.swift */,
 				B3F8BA711C833ABC00F9FBEA /* NFX.swift */,
 				B3F8BA721C833ABC00F9FBEA /* NFXAssets.swift */,
 				8201A39C204E3E3F00AB2C3D /* NFXAuthenticationChallengeSender.swift */,
@@ -459,6 +463,7 @@
 				B3F8BAB11C833AC700F9FBEA /* NFXSettingsController_iOS.swift in Sources */,
 				B3F8BAB01C833AC700F9FBEA /* NFXListController_iOS.swift in Sources */,
 				3708AD5A22D4A9DD0050DB7D /* NFXURLDetailsControllerViewController.swift in Sources */,
+				D45069372CD9D7E900BA1665 /* NFXLogger.swift in Sources */,
 				B3F8BA8E1C833ABC00F9FBEA /* NFXHelper.swift in Sources */,
 				B3F8BA861C833ABC00F9FBEA /* NFXConstants.swift in Sources */,
 				B3F8BAAD1C833AC700F9FBEA /* NFXHelper_iOS.swift in Sources */,
@@ -507,6 +512,7 @@
 				B3F8BA991C833ABC00F9FBEA /* NFXListController.swift in Sources */,
 				B3F8D6801C833B1700F9FBEA /* NFXListController_OSX.swift in Sources */,
 				B3F8BA971C833ABC00F9FBEA /* NFXInfoController.swift in Sources */,
+				D45069362CD9D7E900BA1665 /* NFXLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

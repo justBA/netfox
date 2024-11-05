@@ -49,6 +49,7 @@ open class NFX: NSObject {
     fileprivate var ignoredURLs = [String]()
     fileprivate var ignoredURLsRegex = [NSRegularExpression]()
     fileprivate var lastVisitDate: Date = Date()
+    fileprivate let logger: NFXLogger = .shared
     
     internal var cacheStoragePolicy = URLCache.StoragePolicy.notAllowed
     
@@ -102,9 +103,12 @@ open class NFX: NSObject {
         removeNetfoxFromMainmenu()
         #endif
     }
+    @objc open func shouldShowConsoleLogs(_ status: Bool) {
+        logger.debugLogs = status
+    }
     
     fileprivate func showMessage(_ msg: String) {
-        print("netfox \(nfxVersion) - [https://github.com/kasketis/netfox]: \(msg)")
+        logger.log("netfox \(nfxVersion) - [https://github.com/kasketis/netfox]: \(msg)")
     }
     
     internal func isEnabled() -> Bool {
@@ -170,8 +174,7 @@ open class NFX: NSObject {
         hideNFX()
     }
 
-    @objc open func toggle()
-    {
+    @objc open func toggle() {
         guard self.started else { return }
         toggleNFX()
     }
